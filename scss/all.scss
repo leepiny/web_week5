@@ -1,0 +1,141 @@
+*,*::before,*::after{
+    // outline: 1px solid green;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    padding:32px;
+}
+.menu{
+    background: #EDF4EE;
+    width: 23%;
+    .menu-container{
+        padding: 32px;
+    }
+    .menu-list{
+        i{
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            line-height: 19px;
+            width: 100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 28px;
+            border-left: 4px solid transparent;
+        }
+        a:hover{
+            border-left: 4px solid #2A8356;
+            color: #2A8356;
+        }
+    }
+    .user-photo{
+        cursor: pointer;
+
+        img{
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+        .user-data{
+            p{
+                font-size: 14px;
+                color:#0000009A;
+            }
+        }
+    }
+}
+.content{
+    width: 77%;
+
+    .navbar{
+        .search,.navbar-add{
+            a{
+                padding: 5px;
+                border:1px solid transparent;
+                border-radius: 5px;
+            }
+            a:hover{
+                border:1px solid #EDF4EE;
+                background: rgb(249, 249, 249);
+            }
+        }
+
+    }
+
+    .table{
+        margin-bottom: 63px;
+
+        thead{
+            font-weight: bold;
+        }
+        tbody{
+            tr:hover{
+                background: #EDF4EE;
+            }
+            tr{
+                border-bottom: 1px solid #CDDDCD;
+            }
+        }
+    }
+}
+.page{
+    button{
+        color: black;
+        i{
+            color: #2A8356;
+        }
+    }
+    button:hover{
+        color: white;
+        i{
+            color: white;
+        }
+    }
+}
+.show-window{
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+.modal-content{
+    .modal-detail{
+        .modal-photo{
+            height: 141px;
+            width: 141px;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emir.jpeg) center center no-repeat;
+            background-size: cover;    
+        }
+        input{
+            background: #EDF4EE;
+            width: 87px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+    .fas-rotate{
+        transition: .3s;
+    }
+    .active{
+        transition:.3s;
+        transform:rotate(180deg);
+    }
+}
+
+
+
