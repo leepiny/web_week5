@@ -10,51 +10,54 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="./dist/css/all.min.css">
 </head>
 
 <body>
 
     <div class="wrap d-flex flex-wrap">
-        <div class="menu">
-            <div class="menu-container">
-                <a href="#">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
-                        alt="logo">
-                </a>
+        <div class="menu d-flex flex-column justify-content-between">
+            <div>
+                <div class="menu-container">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
+                            alt="logo">
+                    </a>
+                </div>
+    
+                <ul class="menu-list p-0">
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-list-alt mr-3"></i>Dashboard</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-clone mr-3"></i>Question</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="assignment.html"><i
+                                class="fas fa-clipboard-list mr-3"></i>Assignment</a></li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i
+                                class="fas fa-caret-square-right mr-3"></i>Course</a></li>
+                    <li class="mb-4 d-flex align-items-center"><a href="admin.html"><i class="fas fa-user-friends mr-3"></i>Admin</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-cog mr-3"></i>Settings</a></li>
+                </ul>
+    
             </div>
-
-            <ul class="menu-list">
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-list-alt mr-3"></i>Dashboard</a>
-                </li>
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-clone mr-3"></i>Question</a>
-                </li>
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i
-                            class="fas fa-clipboard-list mr-3"></i>Assignment</a></li>
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i
-                            class="fas fa-caret-square-right mr-3"></i>Course</a></li>
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-user-friends mr-3"></i>Admin</a>
-                </li>
-                <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-cog mr-3"></i>Settings</a></li>
-            </ul>
-
+            
             <div class="menu-container">
-                <!-- 為什麼在menu-container下mt-auto無法把他推到最下面呢？！ -->
-                <div class="user-photo d-flex">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
-                        alt="user-photo">
-                    <div class="user-data">
+                <!-- 為什麼在menu-container下mt-auto無法把他推到最下面呢？！
+                最後用flex做處理 -->
+                <a href="#" class="d-flex align-items-center">
+                    <div class="user-photo"></div>
+                    <div class="user-data mx-3">
                         <h5>Andy Chen</h5>
                         <p class="mb-0">andy0401@mail.com</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
         <div class="content">
             <div class="container">
-                <nav class="navbar justify-content-start pt-0 pb-4">
+                <nav class="navbar justify-content-start pt-0 px-0 pb-4">
                     <a class="navbar-brand mr-5" href="#">Admin</a>
                     <div class="navbar-add">
                         <a href="#" data-toggle="modal" data-target="#staticBackdrop">
@@ -205,7 +208,7 @@
                         <div class="modal-body d-flex justify-content-between p-0">
                             <div class="modal-detail d-flex">
                                 <div class="modal-photo mr-4"></div>
-                                <ul class="m-0 d-flex flex-column justify-content-between">
+                                <ul class="list-unstyled m-0 d-flex flex-column justify-content-between">
                                     <li class="model-id">#1</li>
                                     <li>Admin</li>
                                     <li class="h4 font-weight-bold">Emir Wicks</li>
@@ -312,7 +315,8 @@
                                     </div>
                                 </div>
                                 <div class="add-btn text-right">
-                                    <div class="btn btn-outline-success px-4 py-1 mr-3" data-dismiss="modal">Cancel</div>
+                                    <div class="btn btn-outline-success px-4 py-1 mr-3" data-dismiss="modal">Cancel
+                                    </div>
                                     <div class="btn btn-success px-4 py-1">Add</div>
                                 </div>
                             </form>

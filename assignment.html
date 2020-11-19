@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./dist/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrap d-flex flex-wrap">
+        <div class="menu d-flex flex-column justify-content-between">
+            <div>
+                <div class="menu-container">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
+                            alt="logo">
+                    </a>
+                </div>
+
+                <ul class="menu-list p-0">
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i
+                                class="fas fa-list-alt mr-3"></i>Dashboard</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-clone mr-3"></i>Question</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="assignment.html"><i
+                                class="fas fa-clipboard-list mr-3"></i>Assignment</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i
+                                class="fas fa-caret-square-right mr-3"></i>Course</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="admin.html"><i
+                                class="fas fa-user-friends mr-3"></i>Admin</a>
+                    </li>
+                    <li class="mb-4 d-flex align-items-center"><a href="#"><i class="fas fa-cog mr-3"></i>Settings</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="menu-container">
+                <!-- 為什麼在menu-container下mt-auto無法把他推到最下面呢？！
+                最後用flex做處理 -->
+                <a href="#" class="d-flex align-items-center">
+                    <div class="user-photo"></div>
+                    <div class="user-data mx-3">
+                        <h5>Andy Chen</h5>
+                        <p class="mb-0">andy0401@mail.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <nav class="navbar justify-content-start pt-0 px-0 pb-4">
+                    <a class="navbar-brand mr-5" href="#">Assignment</a>
+                    <div class="navbar-add">
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop">
+                            All Courses
+                            <i class="fas fa-chevron-down ml-2 text-success"></i>
+                        </a>
+                    </div>
+                    <div class="search d-flex ml-auto">
+                        <a href="#" class="mr-4"><i class="fas fa-search d-block"></i></a>
+                        <a href="#"><i class="fas fa-bell d-block"></i></a>
+                    </div>
+                </nav>
+
+                <div class="assignment row">
+                    <div class="col-4">
+                        <div class="font-weight-bold mb-1">All (4)
+                            <i class="fas fa-chevron-down ml-2 text-success"></i>
+                        </div>
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex flex-column">
+                                    <div class="card-section d-flex justify-content-between mb-2">
+                                        Chapter Assignment 2
+                                        <span class="card-time">4 hrs ago</span>
+                                    </div>
+                                    <div class="card-title d-flex justify-content-between align-items-end mb-0">
+                                        <h5 class="m-0">Please check this file…</h5>
+                                        <span class="card-name">Emily Wang</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item d-flex flex-column">
+                                    <div class="card-section d-flex justify-content-between mb-2">
+                                        Chapter Assignment 1
+                                        <span class="card-time">12 hrs ago</span>
+                                    </div>
+                                    <div class="card-title d-flex justify-content-between align-items-end mb-0">
+                                        <h5 class="m-0">My Homework</h5>
+                                        <span class="card-name">David Xu</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item d-flex flex-column">
+                                    <div class="card-section d-flex justify-content-between mb-2">
+                                        Final Assignment
+                                        <span class="card-time">18 hrs ago</span>
+                                    </div>
+                                    <div class="card-title d-flex justify-content-between align-items-end mb-0">
+                                        <h5 class="m-0">Have a problem with this…</h5>
+                                        <span class="card-name">Tony Wei</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item d-flex flex-column">
+                                    <div class="card-section d-flex justify-content-between mb-2">
+                                        Final Assignment
+                                        <span class="card-time">19 hrs ago</span>
+                                    </div>
+                                    <div class="card-title d-flex justify-content-between align-items-end mb-0">
+                                        <h5 class="m-0">Did I do it right?</h5>
+                                        <span class="card-name">Christina Lin</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="mb-1 text-secondary text-right">2 comments</div>
+                        <div class="card mb-3">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-text">
+                                    <small>Chapter Assignment 2 / HTML&CSS</small>
+                                    <h5>Please check this file for me, thanks!</h5>
+                                </div>
+                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                            <div class="media p-3">
+                                <div class="message-photo"></div>
+                                <div class="media-body mx-2 pb-3 border-bottom">
+                                    <h5 class="my-0">Emily Wang</h5>
+                                    <div class="message-time mb-2 text-secondary">10:38 AM (4 hours ago)</div>
+                                    <p>
+                                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                                        question: Why in the following code the height of the <code
+                                            class="code-style">div</code> is bigger than the height of the <code
+                                            class="code-style">img</code> ? There is a gap below the image, but it
+                                        doesn’t seems to be a padding/margin. What is the gap or extra space below
+                                        image?
+                                    </p>
+                                    <div class="btn btn-light">
+                                        <i class="fas fa-paperclip"></i>
+                                        HW-2-David.zip</div>
+                                </div>
+                            </div>
+
+                            <div class="media reply-media p-3">
+                                <div class="message-photo"></div>
+                                <div class="media-body mx-2 pb-3">
+                                    <div class="reply-style d-flex justify-content-between">
+                                        <h5 class="my-0">Andy Chen (You)</h5>
+                                        <div class="reply-icon d-flex">
+                                            <a href="#" class="mr-4"><i class="far fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-pen"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="message-time mb-2 text-secondary">13:24 AM (1 hours ago)</div>
+                                    <p>
+                                        Hi David, by default, an image is rendered inline, like a letter so it sits on
+                                        the same line that a, b, c and d sit on. There is space below that line for the
+                                        descenders you find on letters like g, j, p and q.
+                                    </p>
+                                    You can:
+                                    <ul>
+                                        <li>adjust the<code class="code-style">vertical-align</code> of the image to
+                                            position it elsewhere (e.g. the <code class="code-style">middle</code>)</li>
+                                        <li>change the <code class="code-style">display</code> so it isn’t inline.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="visitors-and-page d-flex justify-content-between align-items-center">
+                            <div class="page d-flex">
+                                <a href="#" class="mr-4"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
+                            <div class="visitors-btn">
+                                <div class="btn btn-outline-success mr-3">Mark as read</div>
+                                <div class="btn btn-success" data-toggle="collapse" href="#replyCollapse">Reply</div>
+                            </div>
+                        </div>
+
+                        <div class="replyCollapse collapse multi-collapse" id="replyCollapse">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-center">
+                                    <h5 class="mr-5 d-flex align-items-center">Body Text
+                                        <a href="#"><i class="fas fa-caret-down ml-2"></i></a>
+                                    </h5>
+                                    <div class="visitors-reply-icon d-flex align-items-center">
+                                        <a href="#" class="mr-5"><i class="fas fa-bold"></i></a>
+                                        <a href="#" class="mr-5"><i class="fas fa-italic"></i></a>
+                                        <a href="#" class="mr-5"><i class="fas fa-list-ul"></i></a>
+                                        <a href="#" class="mr-5"><i class="fas fa-list-ol"></i></a>
+                                        <a href="#" class="mr-5"><i class="fas fa-image"></i></a>
+                                        <a href="#" class="mr-5"><i class="fas fa-paperclip"></i></a>
+                                        <a href="#" class="mr-5">
+                                            <i class="fas fa-angle-left"></i>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list-unstyled visitors-text text-secondary d-flex justify-content-end align-items-end p-3">
+                                    <p class="text-muted align-self-start mr-auto mx-2">Reply an answer…</p>
+                                    <div class="btn btn-outline-danger mr-3" data-toggle="collapse"
+                                        href="#replyCollapse">Cancel</div>
+                                    <div class="btn btn-success">Reply</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

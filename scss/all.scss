@@ -1,4 +1,5 @@
 *,*::before,*::after{
+    box-sizing: border-box;
     // outline: 1px solid green;
 }
 img{
@@ -27,7 +28,7 @@ a:hover{
     .menu-list{
         i{
             font-size: 20px;
-            width: 24px;
+            font-weight: 24px;
         }
         a{
             text-decoration: none;
@@ -46,14 +47,13 @@ a:hover{
         }
     }
     .user-photo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg)center center no-repeat;
+        background-size: cover;
         cursor: pointer;
 
-        img{
-            width: 53px;
-            height: 53px;
-            border-radius: 50%;
-            margin-right: 16px;
-        }
         .user-data{
             p{
                 font-size: 14px;
@@ -138,5 +138,65 @@ a:hover{
     }
 }
 
+.assignment{
+    .col-4{
+        .list-group-item{
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .list-group-item:hover{
+            background: #EDF4EE;
+        }
+    }
+    .col-8{
+        .card-header{
+            background: #EDF4EE;
+        }
+        .media{
+            .message-photo{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg)center center no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .message-time{
+                font-size: 12px;
+            }
+            .code-style{
+                padding: 2px;
+                background: #EDF4EE;
+                color: #2A8356;
+                border-radius: 2px;
+            }
+        }
+        .reply-media{
+            position: relative;
+            .message-photo{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg)center center no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+        }
 
-
+        
+    }
+}
+.replyCollapse{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 15px;
+    .visitors-text{
+        width: 100%;
+        height: 300px;
+        li{
+            position: relative;
+        }
+    }
+}
